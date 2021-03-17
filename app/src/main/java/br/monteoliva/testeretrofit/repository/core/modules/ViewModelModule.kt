@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.core.modules
+package br.monteoliva.testeretrofit.repository.core.modules
 
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module

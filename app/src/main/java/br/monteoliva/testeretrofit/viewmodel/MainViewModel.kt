@@ -3,18 +3,18 @@ package br.monteoliva.testeretrofit.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-import br.monteoliva.testeretrofit.core.api.ApiRepositoryServer
-import br.monteoliva.testeretrofit.model.contracts.balance.Balance
-import br.monteoliva.testeretrofit.model.contracts.statements.Item
+import br.monteoliva.testeretrofit.repository.core.RepositoryServer
+import br.monteoliva.testeretrofit.repository.model.contracts.balance.Balance
+import br.monteoliva.testeretrofit.repository.model.contracts.statements.Item
 
-class MainViewModel(private val apiRetrofitResponse: ApiRepositoryServer) : ViewModel() {
+class MainViewModel(private val repositoryResponse: RepositoryServer) : ViewModel() {
     var myBalance: MutableLiveData<Balance> = MutableLiveData()
     var myStatements: MutableLiveData<Boolean> = MutableLiveData()
 
     private var itemsList: MutableList<Item> = emptyList<Item>().toMutableList()
 
     fun getBalance() {
-        apiRetrofitResponse.getBalance { myBalance.postValue(it) }
+        repositoryResponse.getBalance { myBalance.postValue(it) }
     }
 
     fun getStatementsLoadFirst(offset: Int) {
@@ -27,7 +27,7 @@ class MainViewModel(private val apiRetrofitResponse: ApiRepositoryServer) : View
     }
 
     private fun loadList(offset: Int, isFirst: Boolean) {
-        apiRetrofitResponse.getStatements(offset) { items ->
+        repositoryResponse.getStatements(offset) { items ->
             items.items?.let {
                 itemsList.addAll(it)
             }

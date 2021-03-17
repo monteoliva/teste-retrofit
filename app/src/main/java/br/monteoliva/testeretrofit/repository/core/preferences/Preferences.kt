@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.core.preferences
+package br.monteoliva.testeretrofit.repository.core.preferences
 
 interface Preferences {
     fun getValue(key: String, defaultValue: String) : String

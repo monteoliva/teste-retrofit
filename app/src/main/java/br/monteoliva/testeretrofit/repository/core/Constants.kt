@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.core
+package br.monteoliva.testeretrofit.repository.core
 
 object Constants {
     const val API_URL = "https://desafio-mobile-bff.herokuapp.com"

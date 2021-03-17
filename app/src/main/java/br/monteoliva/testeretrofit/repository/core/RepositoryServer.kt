@@ -1,14 +1,15 @@
-package br.monteoliva.testeretrofit.core.api
+package br.monteoliva.testeretrofit.repository.core
 
+import br.monteoliva.testeretrofit.repository.api.ApiService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-import br.monteoliva.testeretrofit.model.contracts.balance.Balance
-import br.monteoliva.testeretrofit.model.contracts.detail.Detail
-import br.monteoliva.testeretrofit.model.contracts.statements.Statements
+import br.monteoliva.testeretrofit.repository.model.contracts.balance.Balance
+import br.monteoliva.testeretrofit.repository.model.contracts.detail.Detail
+import br.monteoliva.testeretrofit.repository.model.contracts.statements.Statements
 
-class ApiRepositoryServer(private val apiService: ApiService) {
+class RepositoryServer(private val apiService: ApiService) {
     fun getBalance(callback: (Balance) -> Unit) {
         apiService.getBalance().apply {
             enqueue(object: Callback<Balance> {

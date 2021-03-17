@@ -1,11 +1,11 @@
-package br.monteoliva.testeretrofit.core.api
+package br.monteoliva.testeretrofit.repository.core
 
 import okhttp3.Interceptor
 import okhttp3.Response
 
-import br.monteoliva.testeretrofit.core.Constants
+import br.monteoliva.testeretrofit.repository.core.Constants
 
-class ApiServiceInterceptor : Interceptor{
+class ServiceInterceptor : Interceptor{
     override fun intercept(chain: Interceptor.Chain): Response {
         var request = chain.request()
 

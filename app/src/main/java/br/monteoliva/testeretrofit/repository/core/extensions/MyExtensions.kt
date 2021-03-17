@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.core.extensions
+package br.monteoliva.testeretrofit.repository.core.extensions
 
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols

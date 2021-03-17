@@ -10,11 +10,11 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 import br.monteoliva.testeretrofit.R
-import br.monteoliva.testeretrofit.core.extensions.balanceFormat
-import br.monteoliva.testeretrofit.core.extensions.dateFormat
-import br.monteoliva.testeretrofit.core.extensions.gone
-import br.monteoliva.testeretrofit.core.extensions.visible
-import br.monteoliva.testeretrofit.model.contracts.statements.Item
+import br.monteoliva.testeretrofit.repository.core.extensions.balanceFormat
+import br.monteoliva.testeretrofit.repository.core.extensions.dateFormat
+import br.monteoliva.testeretrofit.repository.core.extensions.gone
+import br.monteoliva.testeretrofit.repository.core.extensions.visible
+import br.monteoliva.testeretrofit.repository.model.contracts.statements.Item
 import br.monteoliva.testeretrofit.ui.feature.main.MainActivity
 
 class ItemAdapter(private val activity: MainActivity) : RecyclerView.Adapter<ItemAdapter.ViewHolder>()  {

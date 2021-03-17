@@ -1,12 +1,12 @@
-package br.monteoliva.testeretrofit.core.api
+package br.monteoliva.testeretrofit.repository.api
 
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-import br.monteoliva.testeretrofit.model.contracts.balance.Balance
-import br.monteoliva.testeretrofit.model.contracts.detail.Detail
-import br.monteoliva.testeretrofit.model.contracts.statements.Statements
+import br.monteoliva.testeretrofit.repository.model.contracts.balance.Balance
+import br.monteoliva.testeretrofit.repository.model.contracts.detail.Detail
+import br.monteoliva.testeretrofit.repository.model.contracts.statements.Statements
 
 interface ApiService {
     @GET("/myBalance")

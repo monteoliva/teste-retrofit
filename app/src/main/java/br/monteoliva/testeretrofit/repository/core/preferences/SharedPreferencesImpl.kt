@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.core.preferences
+package br.monteoliva.testeretrofit.repository.core.preferences
 
 import android.content.Context
 import androidx.preference.PreferenceManager

@@ -9,10 +9,10 @@ import kotlin.properties.Delegates
 import kotlinx.android.synthetic.main.activity_main.*
 
 import br.monteoliva.testeretrofit.R
-import br.monteoliva.testeretrofit.core.extensions.balanceFormat
-import br.monteoliva.testeretrofit.core.extensions.gone
-import br.monteoliva.testeretrofit.core.extensions.visible
-import br.monteoliva.testeretrofit.core.preferences.SharedPreferencesImpl
+import br.monteoliva.testeretrofit.repository.core.extensions.balanceFormat
+import br.monteoliva.testeretrofit.repository.core.extensions.gone
+import br.monteoliva.testeretrofit.repository.core.extensions.visible
+import br.monteoliva.testeretrofit.repository.core.preferences.SharedPreferencesImpl
 import br.monteoliva.testeretrofit.ui.feature.BaseActivity
 import br.monteoliva.testeretrofit.ui.adapter.ItemAdapter
 import br.monteoliva.testeretrofit.ui.feature.detail.DetailActivity

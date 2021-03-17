@@ -1,9 +1,9 @@
-package br.monteoliva.testeretrofit.core.api
+package br.monteoliva.testeretrofit.repository.core
 
 import okhttp3.OkHttpClient
 
-object ApiOkHttp3 {
-    operator fun invoke(interceptor: ApiServiceInterceptor): OkHttpClient{
+object OkHttp3 {
+    operator fun invoke(interceptor: ServiceInterceptor): OkHttpClient{
         return OkHttpClient()
             .newBuilder()
             .addInterceptor(interceptor)

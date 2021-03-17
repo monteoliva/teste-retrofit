@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 
 import br.monteoliva.testeretrofit.R
-import br.monteoliva.testeretrofit.core.extensions.invisible
-import br.monteoliva.testeretrofit.core.extensions.visible
+import br.monteoliva.testeretrofit.repository.core.extensions.invisible
+import br.monteoliva.testeretrofit.repository.core.extensions.visible
 
 class Balance(context: Context, private val attrs: AttributeSet) : FrameLayout(context, attrs) {
     private var txtBalanceOn: TextView? = null

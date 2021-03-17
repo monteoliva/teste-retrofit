@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.model.contracts.statements
+package br.monteoliva.testeretrofit.repository.model.contracts.statements
 
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize

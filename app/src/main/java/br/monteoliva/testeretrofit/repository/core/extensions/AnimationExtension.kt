@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.core.extensions
+package br.monteoliva.testeretrofit.repository.core.extensions
 
 import androidx.appcompat.app.AppCompatActivity
 
