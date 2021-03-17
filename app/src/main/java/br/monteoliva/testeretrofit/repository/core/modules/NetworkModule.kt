@@ -9,7 +9,7 @@ import br.monteoliva.testeretrofit.repository.core.preferences.SharedPreferences
 import br.monteoliva.testeretrofit.repository.core.RepositoryServer
 import br.monteoliva.testeretrofit.repository.api.ApiService
 import br.monteoliva.testeretrofit.repository.core.RetrofitMobile
-import br.monteoliva.testeretrofit.repository.core.ServiceInterceptor
+import br.monteoliva.testeretrofit.repository.core.MicroServiceInterceptor
 
 var networkModule = module {
     single<Preferences> { SharedPreferencesImpl(androidContext()) }
@@ -17,6 +17,6 @@ var networkModule = module {
     single {(get() as retrofit2.Retrofit).create(ApiService::class.java) }
 
     factory { OkHttp3(get()) }
-    factory { ServiceInterceptor() }
+    factory { MicroServiceInterceptor() }
     factory { RepositoryServer(get()) }
 }
