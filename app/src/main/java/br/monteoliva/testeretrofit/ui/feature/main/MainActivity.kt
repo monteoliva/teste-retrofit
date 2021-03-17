@@ -1,8 +1,6 @@
-package br.monteoliva.testeretrofit.view.main
+package br.monteoliva.testeretrofit.ui.feature.main
 
 import android.content.Intent
-import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -15,10 +13,10 @@ import br.monteoliva.testeretrofit.core.extensions.balanceFormat
 import br.monteoliva.testeretrofit.core.extensions.gone
 import br.monteoliva.testeretrofit.core.extensions.visible
 import br.monteoliva.testeretrofit.core.preferences.SharedPreferencesImpl
-import br.monteoliva.testeretrofit.view.BaseActivity
-import br.monteoliva.testeretrofit.view.adapter.ItemAdapter
-import br.monteoliva.testeretrofit.view.detail.DetailActivity
-import br.monteoliva.testeretrofit.view.pagnation.PaginationListener
+import br.monteoliva.testeretrofit.ui.feature.BaseActivity
+import br.monteoliva.testeretrofit.ui.adapter.ItemAdapter
+import br.monteoliva.testeretrofit.ui.feature.detail.DetailActivity
+import br.monteoliva.testeretrofit.ui.pagnation.PaginationListener
 import br.monteoliva.testeretrofit.viewmodel.MainViewModel
 
 class MainActivity : BaseActivity(R.layout.activity_main) {

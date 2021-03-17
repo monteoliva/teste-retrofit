@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.main.MainActivity"
+    tools:context=".ui.feature.main.MainActivity"
     android:background="@android:color/white">
 
     <LinearLayout
@@ -35,7 +35,7 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/dimen_18sp" />
 
-                <br.monteoliva.testeretrofit.view.components.BtnEyes
+                <br.monteoliva.testeretrofit.ui.components.BtnEyes
                     android:id="@+id/btnEyesAction"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
 
             </LinearLayout>
 
-            <br.monteoliva.testeretrofit.view.components.Balance
+            <br.monteoliva.testeretrofit.ui.components.Balance
                 android:id="@+id/balanceAction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

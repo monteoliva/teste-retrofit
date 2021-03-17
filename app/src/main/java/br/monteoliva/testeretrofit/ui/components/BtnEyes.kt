@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.view.components
+package br.monteoliva.testeretrofit.ui.components
 
 import android.content.Context
 import android.graphics.drawable.Drawable

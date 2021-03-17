@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.view.components
+package br.monteoliva.testeretrofit.ui.components
 
 import android.content.Context
 import android.util.AttributeSet
@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 
 import br.monteoliva.testeretrofit.R
-import br.monteoliva.testeretrofit.core.extensions.balanceFormat
 import br.monteoliva.testeretrofit.core.extensions.invisible
 import br.monteoliva.testeretrofit.core.extensions.visible
 

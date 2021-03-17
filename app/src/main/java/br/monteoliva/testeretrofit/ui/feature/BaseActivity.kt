@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.view
+package br.monteoliva.testeretrofit.ui.feature
 
 import android.os.Bundle
 import android.view.KeyEvent

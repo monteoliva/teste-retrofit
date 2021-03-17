@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.view.pagnation
+package br.monteoliva.testeretrofit.ui.pagnation
 
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView

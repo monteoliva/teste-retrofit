@@ -14,8 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TesteRetrofit">
-        <activity android:name=".view.detail.DetailActivity" />
-        <activity android:name=".view.main.MainActivity">
+        <activity android:name="br.monteoliva.testeretrofit.ui.feature.detail.DetailActivity" />
+        <activity android:name="br.monteoliva.testeretrofit.ui.feature.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

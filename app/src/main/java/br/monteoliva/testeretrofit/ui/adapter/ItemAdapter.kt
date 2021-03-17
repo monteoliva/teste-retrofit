@@ -1,4 +1,4 @@
-package br.monteoliva.testeretrofit.view.adapter
+package br.monteoliva.testeretrofit.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -15,7 +15,7 @@ import br.monteoliva.testeretrofit.core.extensions.dateFormat
 import br.monteoliva.testeretrofit.core.extensions.gone
 import br.monteoliva.testeretrofit.core.extensions.visible
 import br.monteoliva.testeretrofit.model.contracts.statements.Item
-import br.monteoliva.testeretrofit.view.main.MainActivity
+import br.monteoliva.testeretrofit.ui.feature.main.MainActivity
 
 class ItemAdapter(private val activity: MainActivity) : RecyclerView.Adapter<ItemAdapter.ViewHolder>()  {
     private var list: MutableList<Item> = emptyList<Item>().toMutableList()

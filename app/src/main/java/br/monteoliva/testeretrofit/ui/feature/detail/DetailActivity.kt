@@ -1,7 +1,7 @@
-package br.monteoliva.testeretrofit.view.detail
+package br.monteoliva.testeretrofit.ui.feature.detail
 
 import br.monteoliva.testeretrofit.R
-import br.monteoliva.testeretrofit.view.BaseActivity
+import br.monteoliva.testeretrofit.ui.feature.BaseActivity
 
 class DetailActivity : BaseActivity(R.layout.activity_detail) {
 
