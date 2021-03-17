@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Teste Retrofit</string>
+    <string name="txt_pix">Pix</string>
+    <string name="statements_title">Suas movimentações</string>
+    <string name="your_balance">Seu saldo</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.main.MainActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+        <include layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_20dp"
+            android:background="@color/white_100">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5dp"
+                android:background="@android:color/transparent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_balance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <br.monteoliva.testeretrofit.view.components.BtnEyes
+                    android:id="@+id/btnEyesAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5dp" />
+
+            </LinearLayout>
+
+            <br.monteoliva.testeretrofit.view.components.Balance
+                android:id="@+id/balanceAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:padding="@dimen/dimen_5dp"
+            android:text="@string/statements_title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_18sp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/dimen_50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/black_opacity">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@android:color/holo_orange_dark"
+            android:indeterminateTintMode="src_atop"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+</FrameLayout>
