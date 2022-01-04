@@ -15,6 +15,8 @@ android {
         targetSdkVersion 30
         versionCode 100
         versionName "1.0.0"
+        multiDexEnabled true
+        setProperty("archivesBaseName", "TestRetrofit-$versionName")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
