@@ -40,18 +40,18 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
         mainViewModel.apply {
             getBalance()
             getStatementsLoadFirst(offset)
-            myBalance.observe(this@MainActivity, {
+            myBalance.observe(this@MainActivity) {
                 it.amount?.balanceFormat().apply {
                     preferences.setValue("BALANCE", this.toString())
                     balanceAction.setBalanceValue(this.toString())
                 }
-            })
-            myStatements.observe(this@MainActivity, { isFirst ->
+            }
+            myStatements.observe(this@MainActivity) { isFirst ->
                 if (isFirst) { loadMyStatements() }
                 else {
                     mAdapter.updateList(listItems)
                 }
-            })
+            }
         }
     }
 
