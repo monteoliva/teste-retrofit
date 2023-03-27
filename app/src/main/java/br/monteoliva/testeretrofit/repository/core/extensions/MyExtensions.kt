@@ -27,7 +27,7 @@ fun String.dateFormat() : String {
             return f1.format(time)
         }
     }
-    catch (pe: ParseException) {}
+    catch (_: ParseException) {}
 
     return ""
 }
